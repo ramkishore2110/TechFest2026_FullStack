@@ -1,0 +1,15 @@
+Copy your four gallery photos into this folder with exactly these names:
+
+  image1.jpg
+  image2.jpeg
+  image3.jpg
+  image4.jpg
+
+These names are used in src/pages/Gallery.jsx.
+If you use different names, edit the "photos" array in that file to match.
+
+Tip: resize the photos to about 1200px wide first. Very large files
+(several MB each) make the Gallery page slow and will lower your
+Lighthouse score in Experiment 5.
+
+You can delete this text file afterwards.

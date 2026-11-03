@@ -1,0 +1,35 @@
+TECHFEST 2026 — START HERE
+
+IMPORTANT:
+Keep BOTH folders. Do not replace techfest-react with techfest-backend.
+- techfest-react is the frontend website you already made.
+- techfest-backend is the new Node.js / Express API.
+Both projects work together.
+
+FIRST TIME SETUP (Windows PowerShell)
+
+1) Backend terminal:
+   cd techfest-backend
+   npm install
+   Copy-Item .env.example .env
+
+2) Open techfest-backend/.env and set MONGO_URI and a JWT_SECRET of at least 32 characters.
+   Start MongoDB locally, or paste your MongoDB Atlas connection string into MONGO_URI.
+   Optional: change ADMIN_EMAIL and ADMIN_PASSWORD to create an admin account.
+
+3) Start the backend:
+   npm run dev
+   Check http://localhost:5000/api/health
+
+4) Open a SECOND terminal for the frontend:
+   cd techfest-react
+   npm install
+   Copy-Item .env.example .env
+   npm run dev
+
+5) Open the Vite address, usually http://localhost:5173.
+   Keep BOTH terminals open while using the website.
+
+The ZIP intentionally does not include node_modules or real .env files. Run npm install in each folder. Never upload .env to GitHub.
+
+See README.md for API routes, security, Git, CI/CD, deployment and troubleshooting.
